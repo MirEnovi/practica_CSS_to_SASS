@@ -1,0 +1,316 @@
+/* 
+Guia de estilos
+0.Reset
+1.Layout
+2.Generic Item
+3.Parts of de web
+4.Lista
+5.Form
+6.Animations
+---------------
+Colors
+  color1=>#FBF9ED
+  color2=>#020A1D
+  color3=>#C59A89
+  color4=>#8A7E82
+*/
+
+/* 0 RESET */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+
+/* 1.Layout */
+body {
+  background: rgba(246, 246, 244, 0.746);
+  text-align: center;
+  font:300 20px/1.7 'Roboto Condensed';
+}
+
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .list-services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .list-services figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+  }
+
+
+
+
+/* 2.Generic Item */
+.header {
+  height: 100vh;
+  background: url(../images/header.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.navbar {
+  height: 10vh;
+  width: 100%;
+  background: #3B457A;
+  position: fixed;
+  z-index: 100;
+}
+  .navbar ul {
+    list-style: none;
+    overflow: hidden; /* Limpiamos errores de float */
+  }
+  .navbar a {
+    display: block;
+    color: #ffffff;
+    padding: 0 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font: 25px 'Stint Ultra Condensed',
+    cursive;
+  }
+.title {
+  margin-bottom: 40px;
+  font: 60px 'Stint Ultra Condensed';
+  text-transform: uppercase;
+}
+p {
+  margin-bottom: 40px;
+}
+
+.btn {
+  border: 2px solid;
+  padding: 10px 40px;
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  margin: 10px;
+}
+
+
+
+
+/* 3.Parts of de web */
+.content {
+  padding: 80px 0;
+  height: 75vh;
+}
+
+
+.who {
+  background: #3B457A;
+  color: #ffffff;
+}
+  .who p {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+
+/* .services {
+  background: #FBF9ED
+} */
+
+.taxes {
+  background: url(../images/taxes.jpg) no-repeat center;
+  background-size: cover;
+  color: #ffffff;
+}
+  .content_left {
+    max-width: 50%;
+    margin: 0 auto;
+    background: #5a53538f
+  }
+
+
+.localization {
+  /* background: #FBF9ED; */
+  padding-bottom: 0;
+}
+  .localization .map img {
+    max-width: 100%;
+    width: 100%;
+  }
+
+.list-services figure {
+  position: relative;
+  width: 150px;
+  height: 180px;
+}
+  .list-services figure:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    z-index: 0;
+    background: #5a53538f;
+    /* background: #ffffff; */
+    width: 150px;
+    height: 150px;
+  }
+  .list-services img {
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+  }
+
+.list-services li {
+  padding: 0 30px;
+}
+.list-services figcaption {
+  position: relative;
+  left: 0;
+  bottom: -40px;
+}
+
+/* 4.Lista */
+/* 5.Form */
+/* 6.Animations */
